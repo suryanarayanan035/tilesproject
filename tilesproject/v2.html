@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/index.css">
+        <title>Tile Visualizer</title>
+    </head>
+    <body>
+        <div class="container-fluid bg-dark text-primary">
+                <div class="text-center">
+                    <h2>Tile Visualizer</h2>
+                    <h6 class="ml-5 text-light">Buy in a better way...</h6>
+                </div>
+        </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6">
+                <div class="container">
+                    <h3 class="text-primary">Option - 1</h3>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="container">
+                    <h3 class="text-success text-center">Option - 2</h3>
+                </div>
+              </div>
+          </div>
+      </div>
+        <div class="container-fluid my-1" id="image1-container">
+            <div class="row">
+                <div class="col-lg-1"></div>
+            <div class="col-lg-1  col-sm-2 h-40" id="options-list">
+                <table class="table table-dark striped w-50">
+                    
+                    <tr><td><img src="assets/tile1.jpeg" class="designbutton" onclick="changePhoto(this)"/><p>Design1</p></td></tr>
+                    <tr><td><img src="assets/tile2.jpeg" class="designbutton" onclick="changePhoto(this)"/><p>Design2</p></td></tr>
+                    <tr><td><img src="assets/tile3.jpeg" class="designbutton" onclick="changePhoto(this)"/><p>Design3</p></td></tr>
+                    <tr><td><img src="assets/tile4.jpeg" class="designbutton" onclick="changePhoto(this)"/><p>Design4</p></td></tr>
+                    <tr><td><img src="assets/tile5.jpeg" class="designbutton" onclick="changePhoto(this)"/><p>Design5</p></td></tr>
+                    <tr><td><img src="assets/tile6.jpeg" class="designbutton" onclick="changePhoto(this)"/><p>Design6</p></td></tr>
+                    <tr><td><img src="assets/tile7.jpeg" class="designbutton" onclick="changePhoto(this)"/><p>Design7</p></td></tr>
+                    <tr><td><img src="assets/tile8.jpeg" class="designbutton" onclick="changePhoto(this)"/><p>Design8</p></td></tr>
+                    <tr><td><img src="assets/tile9.jpeg" class="designbutton" onclick="changePhoto(this)"/><p>Design9</p></td></tr>
+                    <tr><td><img src="assets/tile10.jpeg" class="designbutton" onclick="changePhoto(this)"/><p>Design10</p></td></tr>
+                    <tr><td><img src="assets/tile11.jpeg" class="designbutton" onclick="changePhoto(this)"/><p>Design11</p></td></tr>
+                    <tr><td><img src="assets/tile12.jpeg" class="designbutton" onclick="changePhoto(this)"/><p>Design12</p></td></tr>
+                </table>
+            </div>
+            <div class="col-lg-4 col-sm-10">
+                <img src="assets/tile10home.jpeg" id="option1" width="100%" height="100%">
+            </div>
+            <div class="col-lg-1 col-sm-2 h-40 order-4" id="options-list">
+                <table class="table table-dark striped w-50">
+                    
+                    <tr><td><button><img src="assets/tile1.jpeg" class="designbutton" onclick="changePhotoOption2(this)"/><p>Design1</p></button></td></tr>
+                    <tr><td><button><img src="assets/tile2.jpeg" class="designbutton" onclick="changePhotoOption2(this)"/><p>Design2</p></button></td></tr>
+                    <tr><td><button><img src="assets/tile3.jpeg" class="designbutton" onclick="changePhotoOption2(this)"/><p>Design3</p><</button></td></tr>
+                    <tr><td><button><img src="assets/tile4.jpeg" class="designbutton" onclick="changePhotoOption2(this)"/><p>Design4</p></button></td></tr>
+                    <tr><td><button><img src="assets/tile5.jpeg" class="designbutton" onclick="changePhotoOption2(this)"/><p>Design5</p></button></td></tr>
+                    <tr><td><button><img src="assets/tile6.jpeg" class="designbutton" onclick="changePhotoOption2(this)"/><p>Design6</p></button></td></tr>
+                    <tr><td><button><img src="assets/tile7.jpeg" class="designbutton" onclick="changePhotoOption2(this)"/><p>Design7</p></button></td></tr>
+                    <tr><td><button><img src="assets/tile8.jpeg" class="designbutton" onclick="changePhotoOption2(this)"/><p>Design8</p></button></td></tr>
+                    <tr><td><button><img src="assets/tile9.jpeg" class="designbutton" onclick="changePhotoOption2(this)"/><p>Design9</p></button></td></tr>
+                    <tr><td><button><img src="assets/tile10.jpeg" class="designbutton" onclick="changePhotoOption2(this)"/><p>Design10</p></button></td></tr>
+                    <tr><td><button><img src="assets/tile10.jpeg" class="designbutton" onclick="changePhotoOption2(this)"/><p>Design10</p></button></td></tr>
+                    <tr><td><button><img src="assets/tile11.jpeg" class="designbutton" onclick="changePhotoOption2(this)"/><p>Design11</p></button></td></tr>
+                    <tr><td><button><img src="assets/tile12.jpeg" class="designbutton" onclick="changePhotoOption2(this)"/><p>Design12</p></button></td></tr>
+                </table>
+            </div>
+            <div class="col-lg-4 col-sm-10">
+                <img src="assets/tile10home.jpeg" id="option2" width="100%" height="100%">
+            </div>
+        </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <button class=" my-5 mx-auto btn btn-danger" id="buy1" data-toggle="modal" data-target="#priceQuote">Buy Option-1</button>
+                <button class=" my-5 mx-auto btn btn-success" id="buy2" data-toggle="modal" data-target="#priceQuote">Buy Option-2</button>
+            </div>
+        </div>
+        <div class="modal fade" id="priceQuote">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title" id="modaltitle">Price Quote:</div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </div>
+                <div class="modal-body">
+                    <p id="price">Base Price:</p>
+                    <p >Tax:18</p>
+                    <p id="total">Total:</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script
+			  src="https://code.jquery.com/jquery-3.5.1.min.js"
+			  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+              crossorigin="anonymous"></script>
+    <script src="js/v2.js">    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</html>
