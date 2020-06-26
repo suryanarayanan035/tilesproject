@@ -1,0 +1,11 @@
+.board
+{
+    border:1px  solid black;
+}
+
+#side-navbar
+{
+    height: 100vh;
+    background-color: aqua;
+}
+

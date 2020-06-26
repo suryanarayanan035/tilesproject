@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/signup.css">
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+            <div id = "banner" class="col-lg-6 d-flex col-sm-12 col-md-6">
+                <div class="container text-center my-auto" id="title">
+                    <h1 >Bug Tracker</h1>
+                    <small >Easily manage your issues in oneplace</small>
+                    <img src="assets/registrationbanner.jpg">
+                </div>
+                
+            </div>
+            <div id = "registration-form" class=" col-lg-6 d-flex col-sm-12 col md-6">
+                <form  action="index.html"  method="POST" class="mx-auto  justify-content-center  align-self-center">
+                    <h4 class="display-6 font-weight-bold">Create an Account</h4>
+                    <div class="form-group">
+                        <label for="name" class="sr-only text- font-weight-bold"> Name </label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Name">
+                        <small class="d-none text-danger" id="name-error">Name cannot be blank</small>
+                        <small class="d-none text-danger" id="name-format">Name should Contain Only Letters</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailId" class="sr-only text-white font-weight-bold"> Email ID</label>
+                        <input type="email" id="emailId" name="emailId" class="form-control " placeholder="Email ID">
+                        <small class="d-none text-danger" id="emailId-error">Email cannot be blank</small>
+                        <small class="d-none text-danger" id="emailId-format">Provide a Proper Email</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobileNo" class="sr-only text-white font-weight-bold"> Mobile No </label>
+                        <input type="text" id="mobileNo" name="mobileNo" class="form-control" placeholder="Mobile No">
+                        <small class="d-none text-danger" id="mobileNo-error">Mobile No cannot be blank</small>
+                        <small class="d-none text-danger" id="mobileNo-format">Mobile No is invalid</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="sr-only text-white font-weight-bold"> Password </label>
+                        <input type="password" id="password" name="password" class="form-control " placeholder="Password ">
+                        <small class="d-none text-danger" id="password-error">Password Field cannot be blank</small>
+                        <small class="d-none text-danger" id="password-format">Password doest not meet criteria</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword" class="sr-only text-white font-weight-bold"> Confirm Password </label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" class="form-control " placeholder="Re-type Password">
+                        <small class="d-none text-danger" id="confirmPassword-error">Confirm Password Field cannot be blank</small>
+                        <small class="d-none text-danger" id="confirmPassword-match-error">Confirm Password and password do not match</small>
+                    </div>
+                    <div class="text-center mx-auto">
+                    <button type="submit" class="mx-auto btn btn-default w-100 text-light gradient-button">Sign Up</button>
+                </div>
+                Already have an account?<a href="login.html" class="text-right mt-3 badge badge-danger">Login</a>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/signup.js"></script>
+</body>
+</html>
